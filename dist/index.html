@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>超级投资家 | SuperSubject Invest</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0f;
+      color: #e4e4e7;
+      line-height: 1.6;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    header {
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,15,0.8);
+      backdrop-filter: blur(10px);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero {
+      padding: 120px 0 80px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: #71717a;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      background: rgba(99,102,241,0.15);
+      border: 1px solid rgba(99,102,241,0.3);
+      border-radius: 100px;
+      font-size: 0.875rem;
+      color: #818cf8;
+      margin-bottom: 32px;
+    }
+    .section {
+      padding: 80px 0;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #fff;
+    }
+    .section p {
+      color: #71717a;
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 32px;
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      border-color: rgba(99,102,241,0.3);
+      transform: translateY(-4px);
+    }
+    .card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #71717a;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: rgba(34,197,94,0.1);
+      border: 1px solid rgba(34,197,94,0.2);
+      border-radius: 100px;
+      font-size: 0.8rem;
+      color: #22c55e;
+    }
+    .status::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #22c55e;
+      border-radius: 50%;
+    }
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      color: #52525b;
+      font-size: 0.875rem;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      .hero { padding: 80px 0 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">SuperSubject Invest</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="badge">量化交易系统</div>
+      <h1>超级投资家</h1>
+      <p>基于共识机制的量化交易策略平台。让数据驱动决策，让算法执行纪律。</p>
+      <div class="status" style="margin-top: 24px;">系统开发中</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>核心能力</h2>
+      <p>超级投资家整合多维度数据源，构建可验证、可回测、可执行的量化策略体系。</p>
+      <div class="grid">
+        <div class="card">
+          <h3>策略研发</h3>
+          <p>从想法到代码的完整实现路径。支持多因子、事件驱动、统计套利等多种策略类型。</p>
+        </div>
+        <div class="card">
+          <h3>回测验证</h3>
+          <p>基于历史数据的全量回测框架，支持滑点、手续费、冲击成本等真实交易成本模拟。</p>
+        </div>
+        <div class="card">
+          <h3>实盘执行</h3>
+          <p>券商 API 直连，支持条件单、网格交易、TWAP/VWAP 等智能执行算法。</p>
+        </div>
+        <div class="card">
+          <h3>风险监控</h3>
+          <p>实时仓位监控、最大回撤控制、自动熔断机制，确保策略在预期风险范围内运行。</p>
+        </div>
+        <div class="card">
+          <h3>绩效归因</h3>
+          <p>Brinson 归因、因子暴露分析、收益风险比等多维度绩效评估体系。</p>
+        </div>
+        <div class="card">
+          <h3>共识沉淀</h3>
+          <p>策略逻辑、交易记录、风控事件全部上链存证，形成可追溯的投资共识。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>团队</h2>
+      <p>由策略研究员、量化工程师、风控审计组成的专业团队，覆盖从策略设计到实盘执行的全链路。</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>SuperSubject Protocol — 让共识成为可沉淀的资产</p>
+      <p style="margin-top: 8px;">© 2026 SuperSubject. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
